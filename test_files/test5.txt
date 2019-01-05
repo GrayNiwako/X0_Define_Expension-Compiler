@@ -1,0 +1,16 @@
+main {
+	int i;
+	int j;
+	int k;
+	read i;
+	read j;
+	while (i < j) {
+		k = -5;
+		repeat {
+			write k;
+			k++;
+		} until (k == i)
+		i++;
+		write i;
+	}
+}

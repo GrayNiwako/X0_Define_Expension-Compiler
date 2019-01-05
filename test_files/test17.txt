@@ -1,0 +1,24 @@
+main {
+	int i;
+	int j;
+	read j;
+	for (i = 0; i < 10; i++) {
+		if (j == 0)
+			break;
+		if (i == 2) {
+			write -1;
+			i++;
+			continue;
+		}
+		if (i == 4) {
+			write -2;
+			i++;
+			continue;
+		}
+		write i;
+		if (i == 7) {
+			write 0;
+			break;
+		}
+	}
+}

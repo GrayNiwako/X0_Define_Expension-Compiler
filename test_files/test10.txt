@@ -1,0 +1,26 @@
+main {
+	int a;
+	int b;
+	read a;
+	read b;
+	
+	if (a > 3 and b > 3)
+		write 1;
+	else
+		write 0;
+
+	if (a > 3 or b > 3)
+		write 11;
+	else
+		write 10;
+
+	if (a > 3 XOR b > 3)
+		write 21;
+	else
+		write 20;
+
+	if (not a and b > 3)
+		write 31;
+	else
+		write 30;
+}

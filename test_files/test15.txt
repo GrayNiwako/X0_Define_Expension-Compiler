@@ -1,0 +1,17 @@
+main {
+	int i;
+	int j;
+	i = 0;
+	while (i < 10) {
+		write i;
+		j = i - 1;
+		while (j > 0) {
+			if (j > 5)
+				break;
+			write j;
+			j--;
+		}
+		i++;
+		write 101;
+	}
+}

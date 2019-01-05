@@ -1,0 +1,34 @@
+program = "main" "{" block "}".
+block = declaration_list procedure_list statement_list [call_stat].
+procedure_list = [procedure_list procedure_stat | procedure_stat].
+procedure_stat = procedure_init "{" block "}".
+procedure_init = "procedure" ID.
+declaration_list = [declaration_list declaration_stat | declaration_stat].
+declaration_stat = type ID ";" | type ID "[" NUM "]" ";" | "const" type ID "=" ["-"] NUM ";".
+type = "int" | "char" | "bool".
+var = ID | ID "[" expression "]".
+statement_list = statement_list statement | "".
+statement = if_stat | while_stat | read_stat | write_stat | compound_stat | expression_stat | repeat_stat | do_while_stat | for_stat | exit_stat | continue_stat | break_stat | switch_case_stat.
+if_stat = "if" "(" expression ")" statement ["else" statement].
+while_stat = "while" "(" expression ")" statement .
+repeat_stat = "repeat" statement "until" "(" expression ")".
+do_while_stat = "do" statement "while" "(" expression ")".
+for_stat = "for" "(" [expression] ";" [expression] ";" [expression] ")" statement.
+exit_stat = "exit" "(" ")" ";".
+continue_stat = "continue" ";".
+break_stat = "break" ";".
+switch_case_stat = "switch" "(" expression ")" "{" case_list ["default" ":" statement] "}".
+case_list = case_list case_stat | case_stat.
+case_stat = "case" expression ":" statement "break" ";".
+call_stat = "call" ID ";".
+read_stat = "read" var ";".
+write_stat = "write" expression ";".
+compound_stat = "{" statement_list "}".
+expression_stat = expression ";" | ";".
+expression = var "=" expression | simple_expr.
+simple_expr = logical_expr | logical_expr ("XOR" | "and" | "or") logical_expr.
+logical_expr = additive_expr | additive_expr (">" | "<" | ">=" | "<=" | "==" | "!=") additive_expr | "ODD" additive_expr.
+additive_expr = term {("+"|"-") term }.
+term = self_operating {("*"|"/"|"%") self_operating }.
+self_operating = factor | ("++"|"--") factor | factor ("++"|"--") | "not" factor.
+factor = "(" expression ")"| var | NUM | "-" NUM.

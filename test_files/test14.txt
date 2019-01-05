@@ -1,0 +1,15 @@
+main {
+	int i;
+	int j;
+	for (i = 0; i < 10; i++) {
+		write i;
+		for (j = i - 1; j > 0; j--) {
+			if (j > 5) {
+				j--;
+				continue;
+			}
+			write j;
+		}
+		write 101;
+	}
+}

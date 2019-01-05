@@ -1,0 +1,21 @@
+﻿main{
+bool a;
+bool b;
+int x;
+int y;
+read x;
+read y;
+a = x>y;
+if(a){
+  write x;
+  b=0;
+}
+else{
+  write y;
+  b=1;
+}
+write(b);
+write(x and y);
+write(x or y);
+write(x XOR y);
+}

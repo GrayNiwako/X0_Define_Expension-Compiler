@@ -1,0 +1,18 @@
+main {
+	int i;
+	int j;
+	i = 0;
+	do {
+		if (i==0)
+			write i;
+		else {
+			if (i < 5)
+				write (i + 1);
+			else
+				write (i + 3);
+		}
+		i++;
+	} while (i < 10)
+	exit();
+	write 101;
+}

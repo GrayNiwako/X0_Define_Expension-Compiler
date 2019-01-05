@@ -1,0 +1,114 @@
+test_1.txt
+/*输入两个数x,y，依次输出它们的差的绝对值、和、乘积*/
+6 7
+
+test_2.txt
+/*输出1~10的和*/
+
+test_3.txt
+/*输入两个数x,y；输出两个数平方的平均数。检测字符型变量的值*/
+3 5
+
+test_4.txt
+/*计算并依次输出1~10的阶乘*/
+
+test_5.txt
+/*遍历0-99，若为两位数输出1，对于个位数大于十位数的数输出其本身，否则只输出个位*/
+
+test_6.txt
+/*读入一个数a,a小于0：输出1，a大于0小于100：输出除以3的余数，a大于100：输出a除以4的余数*/
+-3 15 123
+
+test_7(1).txt
+/*输出0~9;可根据语法定义将自增/自减符号移动至变量后面*/
+
+test_7(2).txt
+/*输出0~9;可根据语法定义将自增/自减符号移动至变量后面*/
+
+test_7(3).txt
+/*输出0~9*/
+
+test1.txt
+/*输出1-100之间的素数*/
+/*测试嵌套for循环、求余%运算符、for break语句*/
+
+test2.txt
+/*求两个整数的最小公倍数*/
+/*测试read语句、write语句、while循环*/
+6 8
+
+test3.txt
+/*测试各种不同的write语句能否正常输出*/
+5 97
+
+test4.txt
+/*输出1-100之间的素数*/
+/*测试for嵌套while循环、while break语句*/
+
+test5.txt
+/*测试while嵌套repeat until语句、负数的赋值与读入*/
+
+test6.txt
+/*测试x++、x--、++x、--x的区别、判断奇偶运算符ODD*/
+
+test7.txt
+/*测试do while循环、、exit语句、if else嵌套*/
+
+test8.txt
+/*for语句表达式有缺失的情况、bool类型及bool数组的输入输出*/
+
+test9.txt
+/*int、char、bool类型输入值越界或错误、设定值越界的情况*/
+
+test10.txt
+/*(a, b) = (4, 5) | (2, 5) | (5, 2) | (1, 2) | (0, 5)*/
+/*and、or、not、XOR的测试*/
+
+test11.txt
+/*switch case有没有default、switch case嵌套*/
+
+test12.txt
+/*while continue和for continue语句*/
+
+test13.txt
+/*while嵌套含continue*/
+
+test14.txt
+/*for嵌套含continue*/
+
+test15.txt
+/*while嵌套含break*/
+
+test16.txt
+/*for嵌套含break*/
+
+test17.txt
+/*循环中含多个continue、break语句*/
+
+test18.txt
+/*测试过程嵌套、常量定义*/
+
+
+出错处理：（重新整理一下）
+过程嵌套层数超出上限			print('Too many nesting levels!')
+标识符未定义					print("ID '%s' undefined!" % p[1])
+在非循环语句中使用continue	print("'continue' is used in loops!")
+在非循环且非switch case语句中使用break
+	print("'break' is used in loops or the end of every case statement!")
+调用非过程的标识符			print("ID '%s' is not procedure!" % p[1])
+数组越界						print('Array index out of range!')
+数组元素未赋值就使用			print('Array or variable not assigned!')
+标识符过多					print('Too many identifiers!')
+生成的虚拟代码程序过长		print('Program is too long!')
+地址偏移越界					print('Displacement address is too big!')
+int、char、bool类型赋值越界
+	print("The range of type 'int' is -2147483648 ~ 2147483647!")
+	print("The range of type 'char' is -128 ~ 127!")
+	print("The range of type 'bool' is 0 ~ 1!")
+int、char、bool类型输入值类型错误
+	print("The type of input should be 'int'!")
+	print("The type of input should be 'char'!")
+	print("The type of input should be 'bool'!\nPlease input 'true' or 'false'!")
+输入程序不符合X0语法规则
+	print("Syntax error at '%s' at the line %d" % (p.value, p.lineno))
+	print('Syntax error in input!')

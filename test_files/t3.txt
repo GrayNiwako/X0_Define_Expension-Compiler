@@ -1,0 +1,25 @@
+main{
+	const int m = 5;
+	int a;
+	int b;
+	procedure g {
+		procedure h {
+			int i;
+			int x;
+			i = a;
+			x = (m + i) / (m - i);
+			if (x < (a + 1))
+				b = x;
+			write a;
+			write i;
+			write x;
+			write b;
+			write (3 / 2);
+		}
+		a++;
+		call h;
+	}
+	a = 2;
+	b = 1;
+	call g;
+}

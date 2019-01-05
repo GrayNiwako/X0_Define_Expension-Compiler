@@ -1,0 +1,24 @@
+main {
+	int x;
+	int copy;
+	read x;
+	write x;
+	write (ODD x);
+
+	copy = x;
+	write (x++);
+	write x;
+
+	x = copy;
+	write (++x);
+	write x;
+
+	x = copy;
+	write (x--);
+	write x;
+
+	x = copy;
+	write (--x);
+	write x;
+
+}

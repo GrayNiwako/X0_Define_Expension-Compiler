@@ -1,0 +1,23 @@
+main {
+	int x;
+	char y;
+	int i;
+	int p[20];
+	const int a = 37;
+	read x;
+	read y;
+	for(i = 0; i < 20; i++)
+		p[i] = i;
+	i = 5;
+	write 10;
+	write (3 + 10);
+	write (x + 10);
+	write x;
+	write y;
+	write p[0];
+	write p[i];
+	write p[3 + 10];
+	write p[i + 10];
+	write p;
+	write a;
+}

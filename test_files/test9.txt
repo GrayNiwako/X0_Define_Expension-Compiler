@@ -1,0 +1,22 @@
+main {
+	int a;
+	int x;
+	char b;
+	char y;
+	bool c;
+	bool z;
+
+	read a;
+	write a;
+	read b;
+	write b;
+	read c;
+	write c;
+
+	x = 10101010101;
+	y = 128;
+	z = 2;
+	write x;
+	write y;
+	write z;
+}

@@ -1,0 +1,9 @@
+Start x0
+Input?    2
+Input?    0
+2
+false
+0
+1
+1
+End x0

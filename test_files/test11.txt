@@ -1,0 +1,16 @@
+main {
+	int i;
+	int j;
+	read i;
+	read j;
+	switch (i + 1) {
+		case 1 : write 1; break;
+		case 2 : write 2; break;
+		case 3 : {
+			switch (j * 3) {
+				case 3 : write 3; break;
+				default : write 4;
+			}
+		} break;
+	}
+}

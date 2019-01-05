@@ -1,0 +1,22 @@
+main {
+	int i;
+	int j;
+	read i;
+	while (i < 10) {
+		if (i < 5) {
+			i++;
+			continue;
+		}
+		write i;
+		i++;
+	}
+
+	for (j = 0; j < 10; ) {
+		if (j > 5) {
+			j++;
+			continue;
+		}
+		write j;
+		j++;
+	}
+}

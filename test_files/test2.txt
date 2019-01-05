@@ -1,0 +1,18 @@
+main{
+	int a;
+	int b;
+	int c;
+	int m;
+	int n;
+	read a;
+	read b;
+	m = a;
+	n = b;
+	while (b != 0) {
+		c = a % b;
+		a = b;
+		b = c;
+	}
+	write (m * n / a);
+}
+
